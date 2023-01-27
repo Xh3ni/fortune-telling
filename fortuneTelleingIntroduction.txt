@@ -1,0 +1,4 @@
+Welcome to your fortune reading. You can choose to read your monthly 
+horoscope or tarot card reading. 
+A standard tarot card reading will display 3 cards and provides you 
+with a reading of the past, present, or future.
