@@ -1,10 +1,10 @@
-import pandas as pd 
+import pandas as pd
 # imports the pandas module
 
 
 class PandasToList:
     """
-    The PandasToList class creates a data frame from two csv 
+    The PandasToList class creates a data frame from two csv
     files and then turns the data frame into a list.
     One csv contains tarot cards and descriptions for when the
     cards are in the upright position. The second csv contains
