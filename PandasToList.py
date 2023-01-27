@@ -27,7 +27,7 @@ class PandasToList:
 
         The final list is returned(list_upright_taro)
         """
-        df_upright_taro = pd.read_cvs(upright_file)
+        df_upright_taro = pd.read_csv(upright_file)
         list_upright_card = df_upright_taro["CARD"].values
         list_upright_desc = df_upright_taro["DESCRIPTION"].values
         list_upright_taro = [[card, desc] for card, desc in zip(
