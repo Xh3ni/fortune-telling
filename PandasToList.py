@@ -44,12 +44,11 @@ class PandasToList:
         data frame. Then a list is created from data in the CARD
         column and another list is created from the data in the
         DESCRIPTION column.
-        
         Using zip one list is created from the two list. This list
         keeps the card names and card descriptions together.
 
         The final list is returned(list_reverse_taro)
-        """  
+        """
         df_reverse_taro = pd.read_csv(reverse_file)
         list_reverse_card = df_reverse_taro["CARD"].values
         list_reverse_desc = df_reverse_taro["DESCRIPTION"].values
