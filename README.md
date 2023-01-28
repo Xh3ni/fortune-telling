@@ -1,7 +1,7 @@
 # Fortune Telling
 Fortune Telling is a Python terminal game, which runs in the Code Institute mock on Heroku.
 
-Users can read their fortune throug the Monthly Horoscope or from Tator cards game.
+Users can read their fortune throug the Monthly Horoscope or from Tarot cards game.
 
 ![Am I Responsiv](assets/images/fortune-telling-responsive.png)
 
