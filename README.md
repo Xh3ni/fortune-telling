@@ -25,11 +25,11 @@ Users can read their fortune throug the Monthly Horoscope or from Tarot cards ga
 ## How to read fortune
 Fortune telling program was created to provide users with an entertaining way to receive a monthly horoscope or tarot reading. For the horoscope reading, users can read monthly horoscope ( for Februar 2023). The horoscope is taken from [Russh](https://www.russh.com/february-horoscopes-2023/).
 
-During my research I found that tarot reading can be performed in various ways using different card decks. For the Python Tarot Card Reading program I am using the Major Arcana card deck which consist of twenty two cards. Each Major Arcana card will have two interpretations, one if the card is upright and another if the card is reverse. This program will reference a deck of twenty two cards that has forty four interpretations.
+During my research I found that tarot reading can be performed in various ways using different card decks. For my program I am using the Major Arcana card deck which consist of twenty two cards. Each Major Arcana card will have two interpretations, one if the card is upright and another if the card is reverse. This program will reference a deck of twenty two cards that has forty four interpretations.
 
-When a user runs the program they will receive a prompt. They must decide between a Monthly Horoscope reading an a standard reading. 
-If the monthly horoscope is selected the user will be asked to enter the date of birth. After the correct date, the user will be asked by the program the mont of birth. At the end, if  the month entered is valid than the horoscope will display for the specific sign.
-If the data entry are not valid, an Error will display and the program starts from begining.
+When a user runs the program they will receive a prompt. They must decide between a Monthly Horoscope reading and a Standard Major Arcana Spread reading. 
+If the monthly horoscope is selected the user will be asked to enter the date of birth. After the correct date, the user will be asked by the program the month of birth. At the end, if  the month entered is valid than the horoscope will display for the specific sign.
+If the data entry are not valid, an Error will display and the program starts from beginning.
 If a standard tarot reading is selected the user will be shown a tarot card reading based on three random Major Arcana cards. The first card displayed represents the past, the second represents the present, and the third card represents the future. The program will display the three cards, if the cards are upright or reverse, and a description for each card. 
 
 ## Design
@@ -48,7 +48,7 @@ The flow chart was created using [Lucidchart](https://lucid.app/lucidchart/09ea5
 
 ## Features
 After the Welcome and Introduction Section, an user input is required. 
-The User can not read the horoscope either the tarot card without entering an option.
+User cannot read horoscope or tarot card without entering an option.
 
 ### First Option (Monthly Horoscope)
 <ul>
@@ -69,7 +69,7 @@ From the user is required to enter the date of birth.</li>
 ### Second Option (Standart Major Arcana Spread)
 <ul>
 <li>The selected option is 2 (Standart Major Arcana Spread).
-Three Tarot Cards will display randomlly on the console. 
+Three Tarot Cards will display randomly on the console. 
 The first card deck is for the Past.
 The second for the Present.
 The third for the Future</li>
@@ -86,7 +86,7 @@ A goodbye message will appear.
 ![Exit](assets/images/exit.png)
 </ul>
 
-In order to run the program the random and pandas module must be imported. The main program ’run.py’ uses text and csv files. The main program also imports three classes OpeningMessage, PandasToList and EndingMessage. When the program runs you will find some text output formatting with color and boldness.
+In order to run the program the random and pandas module must be imported. The main program ’run.py’ uses text and csv files. The main program also imports three classes OpeningMessage, PandasToList and EndingMessage.
 
 The program also handles exception handling on user input. Exception handling will catch if a user inputs a non-integer. The exception will print a message telling the user to enter a valid input. If an input is an integer but not one of the options an if clause will catch it. The user will see a message with instruction on providing a valid input.
 
@@ -109,7 +109,7 @@ The program also handles exception handling on user input. Exception handling wi
     - File provided in it's entirity by Code Institute.
 ### APIs
 - [ANSI color codes in Python](https://pypi.org/project/ansicolors/) was used to cerate different colors for the messages of the program and heading separation.
-   - [GitHub](hhttps://gist.github.com/rene-d/9e584a7dd2935d0f461904b9f2950007)repository for more information.
+   - [GitHub](hhttps://gist.github.com/rene-d/9e584a7dd2935d0f461904b9f2950007) repository for more information.
 
 - [Git](https://git-scm.com/) - For version control
     These commands were used for version control during project:
@@ -119,7 +119,7 @@ The program also handles exception handling on user input. Exception handling wi
 
 - [GitHub](https://github.com/) - To create my repositories, save and store my project files.
 - [pandas](https://pandas.pydata.org/) - Python Data Analysis Library
-pandas is an open source data analysis and manipulation tool, built on top of the Python programming language. It supports Python 3.8, 3.9 and 3.10 officially. My codes are based on pandas code, as they contain extensive functions very well suited for parsing and analysing data.
+pandas is an open source data analysis and manipulation tool, built on top of the Python programming language. My codes are based on pandas code, as they contain extensive functions very well suited for parsing data.
 - [random](https://www.w3schools.com/python/module_random.asp) - Random Module is used to generate random tarot cards.
 
 ## Bugs and Fix
